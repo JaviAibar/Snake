@@ -1,0 +1,8 @@
+﻿@using Blazor.Extensions;
+@using Blazor.Extensions.Canvas
+@using Blazor.Extensions.Canvas.Canvas2D;
+<h3>Score @Score</h3>
+<BECanvas Width="300" Height="400" @ref="_canvasReference" ></BECanvas>
+
+@*<button @onclick="GoUp">UP</button>*@
+<button @onkeydown="KeyboardHandler" @onkeydown:preventDefault></button>
