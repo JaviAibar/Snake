@@ -199,13 +199,13 @@ namespace Snake.Pages
             switch (e.Code)
             {
                 case "ArrowUp":
-                    ChangeDirection(new Position(0, -1)); break;
+                    ChangeDirection(Position.Up); break;
                 case "ArrowDown":
-                    ChangeDirection(new Position(0, 1)); break;
+                    ChangeDirection(Position.Down); break;
                 case "ArrowLeft":
-                    ChangeDirection(new Position(-1, 0)); break;
+                    ChangeDirection(Position.Left); break;
                 case "ArrowRight":
-                    ChangeDirection(new Position(1, 0)); break;
+                    ChangeDirection(Position.Right); break;
             }
         }
         public void ChangeDirection(Position dir)

@@ -4,6 +4,11 @@ namespace Snake.Pages
 {
     public struct Position
     {
+        public static Position Up => new Position(0, -1);
+        public static Position Down => new Position(0, 1);
+        public static Position Left => new Position(-1, 0);
+        public static Position Right => new Position(1, 0);
+
         public float x, y;
 
         public Position(float x, float y)
