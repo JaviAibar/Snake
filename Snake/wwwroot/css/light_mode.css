@@ -27,8 +27,22 @@
         content: "An error has occurred."
     }
 
+body {
+    background-color: #FEFAE0;
+    color: #CCD5AE;
+}
+
 canvas {
-    border-color: black;
+    border-color: #CCD5AE;
     border-style: solid;
+    background-color: #FEFAE0;
     border-width: 3px;
+}
+
+button {
+    background-color: #FEFAE0;
+    color: #CCD5AE;
+    border-color: #CCD5AE;
+    border-width: 2px;
+    border-style: solid;
 }

@@ -1,0 +1,20 @@
+﻿<h3>ChangeSkin</h3>
+
+<button @onclick='() => ChangeTheme("light_mode.css")'>Light mode</button>
+<button @onclick='() => ChangeTheme("dark_mode.css")'>Dark mode</button>
+<button @onclick='() => ChangeTheme("purple_mode.css")'>Purple mode</button>
+@* 
+<button @onclick="ChangeTheme" @cssfile="light_mode.css">Light mode</button>
+<button @onclick="ChangeTheme" @cssfile="dark_mode.css">Dark mode</button>
+<button @onclick="ChangeTheme" @cssfile="purple_mode.css">Purple mode</button> *@
+
+@code {
+    [Inject]
+    private IJSRuntime JSRuntime { get; set; }
+
+    private void ChangeTheme(string cssFile)
+    {
+       // var jsInterop = (IJSRuntime)Context.Services.GetService(typeof(IJSRuntime));
+        JSRuntime.InvokeVoidAsync("changeCss", cssFile);
+    }
+}

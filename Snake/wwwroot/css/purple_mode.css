@@ -1,0 +1,19 @@
+﻿body {
+    background-color: #2E073F;
+    color: #AD49E1
+}
+
+canvas {
+    border-color: #AD49E1;
+    border-style: solid;
+    border-width: 3px;
+    background-color: #EBD3F8;
+}
+
+button {
+    background-color: #7A1CAC;
+    color: #EBD3F8;
+    border-color: #EBD3F8;
+    border-width: 2px;
+    border-style: solid;
+}
